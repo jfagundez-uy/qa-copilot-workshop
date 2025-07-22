@@ -4,10 +4,8 @@
   "description": "TypeScript API automation framework that does its job in a simple but effective way",
   "main": "index.js",
   "scripts": {
-    "test": "mocha src/**/*.spec.ts --timeout 10000",
-    "test:parallel": "mocha src/**/*.spec.ts --timeout 10000 --parallel",
-    "smoke": "mocha src/**/*.spec.ts --grep @Smoke --timeout 10000",
-    "regression": "mocha src/**/*.spec.ts --grep @Regression --timeout 10000",
+    "check": "mocha src/tests/check.spec.ts --timeout 10000 --no-warnings",
+    "test": "mocha src/**/*.spec.ts --timeout 10000 --no-warnings",
     "lint": "npx eslint src",
     "lint:fix": "npx eslint src --fix",
     "prettier:check": "prettier --check src",
