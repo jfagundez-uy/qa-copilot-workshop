@@ -1,12 +1,12 @@
 export interface BookingModel {
-  id?: number | undefined;
+  id?: number | string | undefined;
   firstname?: string | undefined;
   lastname?: string | undefined;
-  totalprice?: number | undefined;
-  depositpaid?: boolean | undefined;
+  totalprice?: number | string | undefined;
+  depositpaid?: boolean | string | undefined;
   bookingdates?: {
-    checkin?: string | undefined;
-    checkout?: string | undefined;
+    checkin?: string | number | undefined;
+    checkout?: string | number | undefined;
   };
   additionalneeds?: string | undefined;
 }
