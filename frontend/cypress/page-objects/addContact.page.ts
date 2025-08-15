@@ -6,6 +6,10 @@ class AddContactPage {
   get lastNameField() {
     return cy.get('#lastName');
   }
+
+  get submitButton() {
+    return cy.get('#submit');
+  }
 }
 
 export default new AddContactPage();
